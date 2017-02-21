@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           },
           single_file: {
                 src: '_build/_css/main.css',
-                dest: 'public/assets/css/create-bespoke.css'
+                dest: 'assets/css/create-bespoke.css'
           }
       },
       
