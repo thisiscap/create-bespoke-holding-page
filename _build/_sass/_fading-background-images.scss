@@ -1,5 +1,5 @@
 .cb-slideshow,
-.cb-slideshow:after { 
+.cb-slideshow:after {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -9,12 +9,13 @@
   margin: 0;
   padding: 0;
 }
-.cb-slideshow:after { 
+.cb-slideshow:after {
   content: '';
-  background-color: rgba(255, 255, 255, 0.6); 
+  //Adjust the opacity of the white overlay here
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.cb-slideshow li span { 
+.cb-slideshow li span {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -26,29 +27,29 @@
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 18s linear infinite 0s; 
+  animation: imageAnimation 18s linear infinite 0s;
 }
 
-.cb-slideshow li:nth-child(1) span { 
-  background-image: url(/assets/images/chestnut-road-kitchen.jpg) 
+.cb-slideshow li:nth-child(1) span {
+  background-image: url(/assets/images/chestnut-road-kitchen.jpg)
 }
-.cb-slideshow li:nth-child(2) span { 
+.cb-slideshow li:nth-child(2) span {
   background-image: url(/assets/images/loft-space-ferntower-road.jpg);
-  animation-delay: 6s; 
+  animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) span { 
+.cb-slideshow li:nth-child(3) span {
   background-image: url(/assets/images/stone-resin-staircase.jpg);
-  animation-delay: 12s; 
+  animation-delay: 12s;
 }
 
-.cb-slideshow li:nth-child(2) div { 
-  animation-delay: 6s; 
+.cb-slideshow li:nth-child(2) div {
+  animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) div { 
-  animation-delay: 12s; 
+.cb-slideshow li:nth-child(3) div {
+  animation-delay: 12s;
 }
 
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
   0% {
     opacity: 0;
     animation-timing-function: ease-in;
