@@ -1,0 +1,37 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  //Align the centered text
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  z-index: 10;
+}
+
+h2 {
+  padding-bottom: 3rem;
+}
+
+a:link {
+  display: block;
+  margin: 1em 0;
+  color: inherit;
+  transition: color 1s ease;
+}
+
+a:hover {
+  color: darken(white, 10%);
+}
+
+a:active {}
+
+a:visted {}
+
